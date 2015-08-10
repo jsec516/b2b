@@ -27,19 +27,22 @@ Route::get('/user/confirm/{code}', 'UserController@confirm');
 
 // profile completion routes
 Route::group(['middleware' => 'auth'], function() {
-	Route::get('/profile-complete/picture','UserController@setPicture');
-	Route::Post('/profile-complete/picture','UserController@processPicture');
-	Route::get('/profile-complete/about','UserController@setAbout');
-	Route::Post('/profile-complete/about','UserController@processAbout');
-	Route::get('/profile-complete/contact','UserController@setContact');
-	Route::Post('/profile-complete/contact','UserController@processContact');
-	Route::get('/profile-complete/preview','UserController@setPreview');
+	Route::get('/profile-complete/picture','ProfileController@getPicture');
+	Route::Post('/profile-complete/picture','ProfileController@postPicture');
+	Route::get('/profile-complete/about','ProfileController@getAbout');
+	Route::Post('/profile-complete/about','ProfileController@postAbout');
+	Route::get('/profile-complete/contact','ProfileController@getContact');
+	Route::Post('/profile-complete/contact','ProfileController@postContact');
+	Route::get('/profile-complete/preview','ProfileController@getPreview');
 });
 
 //items related routes
-Route::get('/place-ad','ItemController@newAd');
-Route::get('/place-product','ItemController@newProduct');
-Route::get('/place-auction','ItemController@newAuction');
+Route::get('/place-ad','AdController@getNew');
+Route::post('/place-ad','AdController@postNew');
+Route::get('/place-product','ProductController@getNew');
+Route::post('/place-product','ProductController@postNew');
+Route::get('/place-auction','AuctionController@getNew');
+Route::post('/place-auction','AuctionController@postNew');
 
 // admin routes
 Route::group(['prefix' => 'admin'], function() {
