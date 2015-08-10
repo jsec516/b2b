@@ -5,7 +5,7 @@ class ProductController extends ItemController
 	
 	public function getNew(){
 		$this->renderView = 'product.new';
-		$this->renderItemView();
+		return $this->renderItemView();
 	}
 	
 	public function postNew(){
