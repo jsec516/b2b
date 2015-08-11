@@ -1,5 +1,6 @@
 <?php
 use App\Libraries\Utils;
+use Bootstrapper;
 return [
 
     /*
@@ -136,7 +137,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+		/*
+		 * custom providers
+		 */
+    	Bootstrapper\BootstrapperL5ServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -193,7 +197,30 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
     	// custom added
     	'Utils'		=> App\Libraries\Utils::class,
-
+    	'Accordion' => Bootstrapper\Facades\Accordion::class,
+    	'Alert' => Bootstrapper\Facades\Alert::class,
+    	'Badge' => Bootstrapper\Facades\Badge::class,
+    	'Breadcrumb' => Bootstrapper\Facades\Breadcrumb::class,
+    	'Button' => Bootstrapper\Facades\Button::class,
+    	'ButtonGroup' => Bootstrapper\Facades\ButtonGroup::class,
+    	'Carousel' => Bootstrapper\Facades\Carousel::class,
+    	'ControlGroup' => Bootstrapper\Facades\ControlGroup::class,
+    	'DropdownButton' => Bootstrapper\Facades\DropdownButton::class,
+    	//'Form' => 'Bootstrapper\Facades\Form',
+    	'Helpers' => Bootstrapper\Facades\Helpers::class,
+    	'Icon' => Bootstrapper\Facades\Icon::class,
+    	'InputGroup' => Bootstrapper\Facades\InputGroup::class,
+    	//'Image' => 'Bootstrapper\Facades\Image',
+    	'Label' => Bootstrapper\Facades\Label::class,
+    	'MediaObject' => Bootstrapper\Facades\MediaObject::class,
+    	'Modal' => Bootstrapper\Facades\Modal::class,
+    	'Navbar' => Bootstrapper\Facades\Navbar::class,
+    	'Navigation' => Bootstrapper\Facades\Navigation::class,
+    	'Panel' => Bootstrapper\Facades\Panel::class,
+    	'ProgressBar' => Bootstrapper\Facades\ProgressBar::class,
+    	'Tabbable' => Bootstrapper\Facades\Tabbable::class,
+    	'Table' => Bootstrapper\Facades\Table::class,
+    	'Thumbnail' => Bootstrapper\Facades\Thumbnail::class
     ],
 
 ];
