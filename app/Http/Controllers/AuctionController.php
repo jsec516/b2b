@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Http\Requests\AuctionFormRequest;
 class AuctionController extends ItemController
 {
 	
@@ -8,7 +9,7 @@ class AuctionController extends ItemController
 		$this->renderItemView();
 	}
 	
-	public function postNew(){
-	
+	public function postNew(AuctionFormRequest $request){
+		// do the stuff here
 	}
 }

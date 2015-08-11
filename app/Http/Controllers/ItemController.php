@@ -4,7 +4,7 @@ class ItemController extends Controller
 {
 	protected $renderView;
 	
-	protected function getNew()
+	/*protected function getNew()
 	{
 		
 	}
@@ -12,7 +12,7 @@ class ItemController extends Controller
 	protected function postNew()
 	{
 	
-	}
+	}*/
 	
 	protected function renderItemView(){
 		return $this->renderView;

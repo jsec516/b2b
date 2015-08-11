@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Http\Requests\ProductFormRequest;
 class ProductController extends ItemController
 {
 	
@@ -8,7 +9,7 @@ class ProductController extends ItemController
 		return $this->renderItemView();
 	}
 	
-	public function postNew(){
+	public function postNew(ProductFormRequest $request){
 	
 	}
 }
