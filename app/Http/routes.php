@@ -55,3 +55,6 @@ Route::group(['prefix' => 'admin'], function() {
 	}
 });
 
+// global variables
+define('SITE_URL', Config::get('app.url'));
+define('AUCTIONZOO_VERSION', '1.0.0');
