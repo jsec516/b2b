@@ -1,6 +1,5 @@
 <?php
 use App\Libraries\Utils;
-use Bootstrapper;
 return [
 
     /*
@@ -141,6 +140,7 @@ return [
 		 * custom providers
 		 */
     	Bootstrapper\BootstrapperL5ServiceProvider::class,
+    	Chumper\Datatable\DatatableServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -197,7 +197,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
     	// custom added
     	'Utils'		=> App\Libraries\Utils::class,
-    	'Accordion' => Bootstrapper\Facades\Accordion::class,
+    	/*'Accordion' => Bootstrapper\Facades\Accordion::class,
     	'Alert' => Bootstrapper\Facades\Alert::class,
     	'Badge' => Bootstrapper\Facades\Badge::class,
     	'Breadcrumb' => Bootstrapper\Facades\Breadcrumb::class,
@@ -220,7 +220,32 @@ return [
     	'ProgressBar' => Bootstrapper\Facades\ProgressBar::class,
     	'Tabbable' => Bootstrapper\Facades\Tabbable::class,
     	'Table' => Bootstrapper\Facades\Table::class,
-    	'Thumbnail' => Bootstrapper\Facades\Thumbnail::class
+    	'Thumbnail' => Bootstrapper\Facades\Thumbnail::class*/
+    	'Accordion' => 'Bootstrapper\Facades\Accordion',
+    	'Alert' => 'Bootstrapper\Facades\Alert',
+    	'Badge' => 'Bootstrapper\Facades\Badge',
+    	'Breadcrumb' => 'Bootstrapper\Facades\Breadcrumb',
+    	'Button' => 'Bootstrapper\Facades\Button',
+    	'ButtonGroup' => 'Bootstrapper\Facades\ButtonGroup',
+    	'Carousel' => 'Bootstrapper\Facades\Carousel',
+    	'ControlGroup' => 'Bootstrapper\Facades\ControlGroup',
+    	'DropdownButton' => 'Bootstrapper\Facades\DropdownButton',
+    	//'Form' => 'Bootstrapper\Facades\Form',
+    	'Helpers' => 'Bootstrapper\Facades\Helpers',
+    	'Icon' => 'Bootstrapper\Facades\Icon',
+    	'InputGroup' => 'Bootstrapper\Facades\InputGroup',
+    	//'Image' => 'Bootstrapper\Facades\Image',
+    	'Label' => 'Bootstrapper\Facades\Label',
+    	'MediaObject' => 'Bootstrapper\Facades\MediaObject',
+    	'Modal' => 'Bootstrapper\Facades\Modal',
+    	'Navbar' => 'Bootstrapper\Facades\Navbar',
+    	'Navigation' => 'Bootstrapper\Facades\Navigation',
+    	'Panel' => 'Bootstrapper\Facades\Panel',
+    	'ProgressBar' => 'Bootstrapper\Facades\ProgressBar',
+    	'Tabbable' => 'Bootstrapper\Facades\Tabbable',
+    	'Table' => 'Bootstrapper\Facades\Table',
+    	'Thumbnail' => 'Bootstrapper\Facades\Thumbnail',
+    	'Datatable' => 'Chumper\Datatable\Facades\DatatableFacade',
     ],
 
 ];

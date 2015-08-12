@@ -18,12 +18,28 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="{{ asset('favicon.png?test') }}" rel="shortcut icon">
-	{{ HTML::style('css/bootstrap.css') }}
+	<link href="{{ asset('css/bootstrap.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
+	<link href="{{ asset('css/jquery.dataTables.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
+	<script type="text/javascript" src="{{ asset('js/jquery-1.11.3.js') }}?no_cache={{ AUCTIONZOO_VERSION }}"></script>
+	<script type="text/javascript" src="{{ asset('js/bootstrap.js') }}?no_cache={{ AUCTIONZOO_VERSION }}"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery.dataTables.min.js') }}?no_cache={{ AUCTIONZOO_VERSION }}"></script>
+	<script type="text/javascript">
+		/* Set the defaults for DataTables initialisation */
+	    $.extend( true, $.fn.dataTable.defaults, {
+	        "bSortClasses": false,
+	        "sDom": "t<'row'<'col-md-6'i><'col-md-6'p>>l",
+	        "sPaginationType": "bootstrap",
+	        "bInfo": true,
+	        "oLanguage": {
+	            'sEmptyTable': "{{ trans('texts.empty_table') }}",
+	            'sLengthMenu': '_MENU_ {{ trans('texts.rows') }}',
+	            'sSearch': ''
+	        }
+	    } );
+	</script>	
 	@yield('head')
 </head>
 <body>
 @yield('body')
 <h1>Hello</h1>
-{{ HTML::script('js/jquery-1.11.3.js') }}
-{{ HTML::script('js/bootstrap.js') }}
 </body>

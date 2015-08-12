@@ -16,7 +16,8 @@
         "patricktalmadge/bootstrapper": "~5",
         "anahkiasen/former": "4.0.*@dev",
         "chumper/datatable": "dev-develop",
-        "barryvdh/laravel-debugbar": "^2.0"
+        "barryvdh/laravel-debugbar": "^2.0",
+        "laravelcollective/html": "~5.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
