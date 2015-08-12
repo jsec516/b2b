@@ -2,7 +2,10 @@
 
 return array(
 
-  
+  // form inputs
+  'email_field' => 'Email',
+  'password_field' => 'Password',
+  'remember_me_field' => 'Remember Me',
 
   // Emails
   'confirmation_subject' => 'Invoice Ninja Account Confirmation',

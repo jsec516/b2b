@@ -1,24 +1,15 @@
 @extends('master')
 @section('body')
-<form method="POST" action="/auth/login">
-    {!! csrf_field() !!}
-
-    <div>
-        Email
-        <input type="email" name="email" value="{{ old('email') }}">
-    </div>
-
-    <div>
-        Password
-        <input type="password" name="password" id="password">
-    </div>
-
-    <div>
-        <input type="checkbox" name="remember"> Remember Me
-    </div>
-
-    <div>
-        <button type="submit">Login</button>
-    </div>
-</form>
+<div class="row">
+	<div class="col-md-offset-4 col-md-4">
+		{!! Former::open('login')->addClass('loginForm') !!}
+		    {!! csrf_field() !!}
+			{!! Former::populateField('email', old('email')) !!}
+			{!! Former::email('email')->label(trans('texts.email_field')) !!}
+			{!! Former::password('password')->label(trans('texts.password_field')) !!}
+			{!! Former::checkbox('remember')->label(' ')->text(trans('texts.remember_me_field')) !!}
+			{!! Former::actions()->large_primary_submit('Login') !!}
+		{!! Former::close() !!}
+	</div>
+</div>
 @stop

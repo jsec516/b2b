@@ -141,6 +141,8 @@ return [
 		 */
     	Bootstrapper\BootstrapperL5ServiceProvider::class,
     	Chumper\Datatable\DatatableServiceProvider::class,
+    	Collective\Html\HtmlServiceProvider::class,
+    	Former\FormerServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -246,6 +248,9 @@ return [
     	'Table' => 'Bootstrapper\Facades\Table',
     	'Thumbnail' => 'Bootstrapper\Facades\Thumbnail',
     	'Datatable' => 'Chumper\Datatable\Facades\DatatableFacade',
+    	'Form' => 'Collective\Html\FormFacade',
+    	'Html' => 'Collective\Html\HtmlFacade',
+    	'Former' => 'Former\Facades\Former',
     ],
 
 ];
