@@ -55,9 +55,9 @@ return [
         'mysql' => [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'auctionzoo'),
-            'username'  => env('DB_USERNAME', 'auctionzoo'),
-            'password'  => env('DB_PASSWORD', ''),
+            'database'  => env('DB_DATABASE', 'b2b'),
+            'username'  => env('DB_USERNAME', 'homestead'),
+            'password'  => env('DB_PASSWORD', 'secret'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

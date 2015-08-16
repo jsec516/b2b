@@ -20,6 +20,8 @@
     <link href="{{ asset('favicon.png?test') }}" rel="shortcut icon">
 	<link href="{{ asset('css/bootstrap.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
 	<link href="{{ asset('css/jquery.dataTables.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700,900|Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="{{ asset('css/app.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
 	<script type="text/javascript" src="{{ asset('js/jquery-1.11.3.js') }}?no_cache={{ AUCTIONZOO_VERSION }}"></script>
 	<script type="text/javascript" src="{{ asset('js/bootstrap.js') }}?no_cache={{ AUCTIONZOO_VERSION }}"></script>
 	<script type="text/javascript" src="{{ asset('js/jquery.dataTables.min.js') }}?no_cache={{ AUCTIONZOO_VERSION }}"></script>
