@@ -25,15 +25,15 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3 logo">
+				<div class="col-md-2 logo">
 					<a href="{{ URL::to(AUCTIONZOO_WEB_URL) }}">
 				    	<img src="{{ asset('images/logo.png') }}" style="height:18px;width:auto"/>
 					</a>
 				</div>
-				<div class="col-md-9 mini-nav">
-					<ul class="list-inline">
-						
-					</ul>
+				<div class="col-md-8">
+				
+				</div>
+				<div class="col-md-2 post-buy-lead">
 				</div>
 			</div>
 		</div>
