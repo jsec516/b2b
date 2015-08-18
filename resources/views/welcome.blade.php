@@ -1,6 +1,6 @@
 @extends('header')
-@section('body')
-<div class="row">
+@section('content')
+<div class="row content">
 	<div class="col-md-offset-4 col-md-4">
 	</div>
 </div>

@@ -6,7 +6,18 @@ return array(
   'email_field' => 'Email',
   'password_field' => 'Password',
   'remember_me_field' => 'Remember Me',
-
+	// home page
+	'top_greetings' => 'Welcome :user_role',
+    // authentication and registration
+	'login' => 'Sign In',
+	'register' => 'Join Free',
+	// additional text
+	'call_us' => 'Call Us',
+	// mini-menu
+	'buy_menu_text' => 'Buy',
+	'sell_menu_text' => 'Sell',
+	'advertise_menu_text' => 'Advertise',
+	'help_menu_text' => 'Help',
   // Emails
   'confirmation_subject' => 'Invoice Ninja Account Confirmation',
   'confirmation_header' => 'Account Confirmation',
@@ -147,7 +158,7 @@ return array(
   'new_account' => 'New Account',
   'associated_accounts' => 'Successfully linked accounts',
   'unlinked_account' => 'Successfully unlinked accounts',
-  'login' => 'Login',
+  
   'or' => 'or',
 
   'email_error' => 'There was a problem sending the email',

@@ -19,6 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="{{ asset('favicon.png?test') }}" rel="shortcut icon">
 	<link href="{{ asset('css/bootstrap.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
+	<link href="{{ asset('css/font-awesome.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
 	<link href="{{ asset('css/jquery.dataTables.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700,900|Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 	<link href="{{ asset('css/app.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />

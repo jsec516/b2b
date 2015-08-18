@@ -14,8 +14,8 @@
 Route::get('/', 'HomeController@showIndex');
 
 // authentication routes
-Route::get('/signup', array('as' => 'signup', 'uses' => 'Auth\AuthController@getRegister'));
-Route::post('/signup', array('as' => 'signup', 'uses' => 'Auth\AuthController@postRegister'));
+Route::get('/register', array('as' => 'register', 'uses' => 'Auth\AuthController@getRegister'));
+Route::post('/register', array('as' => 'register', 'uses' => 'Auth\AuthController@postRegister'));
 Route::get('/login', array('as' => 'login', 'uses' => 'Auth\AuthController@getLogin'));
 Route::post('/login', array('as' => 'login', 'uses' => 'Auth\AuthController@postLogin'));
 Route::get('/logout', array('as' => 'logout', 'uses' => 'Auth\AuthController@getLogoutWrapper'));
@@ -59,3 +59,4 @@ Route::group(['prefix' => 'admin'], function() {
 define('SITE_URL', Config::get('app.url'));
 define('AUCTIONZOO_VERSION', '1.0.0');
 define('CONTACT_EMAIL', 'auctionzoo@gmail.com');
+define('AUCTIONZOO_WEB_URL', 'https://www.auctionzoo.com');
