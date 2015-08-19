@@ -214,7 +214,7 @@ return [
     	'Icon' => 'Bootstrapper\Facades\Icon',
     	'InputGroup' => 'Bootstrapper\Facades\InputGroup',
     	//'Image' => 'Bootstrapper\Facades\Image',
-    	/*'Label' => 'Bootstrapper\Facades\Label',
+    	'Label' => 'Bootstrapper\Facades\Label',
     	'MediaObject' => 'Bootstrapper\Facades\MediaObject',
     	'Modal' => 'Bootstrapper\Facades\Modal',
     	'Navbar' => 'Bootstrapper\Facades\Navbar',
@@ -223,7 +223,7 @@ return [
     	'ProgressBar' => 'Bootstrapper\Facades\ProgressBar',
     	'Tabbable' => 'Bootstrapper\Facades\Tabbable',
     	'Table' => 'Bootstrapper\Facades\Table',
-    	'Thumbnail' => 'Bootstrapper\Facades\Thumbnail',*/
+    	'Thumbnail' => 'Bootstrapper\Facades\Thumbnail',
     	'Datatable' => 'Chumper\Datatable\Facades\DatatableFacade',
     	'Form' => 'Collective\Html\FormFacade',
     	'Html' => 'Collective\Html\HtmlFacade',
