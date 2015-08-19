@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layout.master')
 @section('body')
 <div class="row">
 	<div class="col-md-offset-4 col-md-4">

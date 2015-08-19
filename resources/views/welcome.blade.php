@@ -1,4 +1,4 @@
-@extends('header')
+@extends('layout.public')
 @section('content')
 <div class="row content">
 	<div class="col-md-12">
