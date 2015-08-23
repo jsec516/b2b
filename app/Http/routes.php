@@ -102,10 +102,10 @@ Route::group ( [
 } );
 
 // global variables
-define ('APP_NAME', 'AuctionZoo');
+define ('APP_NAME', 'Exporters Hub');
 define ('APP_DEV_COMP', 'codeflow ltd.');
-define ('APP_URL_NAME', 'auctionzoo.com');
+define ('APP_URL_NAME', 'exportershub.com');
 define ( 'SITE_URL', Config::get ( 'app.url' ) );
 define ( 'AUCTIONZOO_VERSION', '1.0.0' );
 define ( 'CONTACT_EMAIL', 'auctionzoo@gmail.com' );
-define ( 'AUCTIONZOO_WEB_URL', 'http://localhost:8000' );
+define ( 'APP_WEB_URL', 'http://localhost:8000' );

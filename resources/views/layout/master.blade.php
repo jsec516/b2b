@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>AuctionZoo | {{ isset($title) ? $title : ' ' . trans('texts.app_title') }}</title> 
+    <title>{{ APP_NAME }} | {{ isset($title) ? $title : ' ' . trans('texts.app_title') }}</title> 
     <meta name="description" content="{{ isset($description) ? $description : trans('texts.app_description') }}" />
 
     <!-- Source: https://github.com/jsec516/b2b -->
@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="{{ asset('favicon.png?test') }}" rel="shortcut icon">
+    <link href="{{ asset('images/favicon.png?test') }}" rel="shortcut icon">
 	<link href="{{ asset('css/bootstrap.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
 	<link href="{{ asset('css/font-awesome.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
 	<link href="{{ asset('css/jquery.dataTables.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
