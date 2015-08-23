@@ -6,7 +6,7 @@ return array (
 		'password_field' => 'Password',
 		'remember_me_field' => 'Remember Me',
 		// home page
-		'top_greetings' => 'Welcome :user_role',
+		'user_greetings' => 'Welcome :user_role',
 		// authentication and registration
 		'login' => 'Sign In',
 		'register' => 'Join Free',
@@ -33,7 +33,26 @@ return array (
 		'buy_lead_btn' => 'Post Buy Requirement',
 		// etc.
 		'hot_regions' => 'Hot Regions',
+		'free' => 'Its Free',
+		'for_supplier' => 'For Supplier',
+		'for_buyer' => 'For Buyers',
+		'book_banner' => 'Book your Banner',
+		'advertise_area' => 'Advertise Area',
+		'paid_membership' => 'Paid Membership',
+		'featured_companies' => 'Featured Companies',
+		'featured_products' => 'Featured Products',
+		'latest_buy_leads' => 'Latest Buy Leads',
 		'browse_categories_heading' => 'Browse our product categories',
+		'general_links_header' => 'General Links',
+		'trade_links_header' => 'Trade Tool Kit',
+		'service_links_header' => 'Services Directory',
+		'business_links_header' => 'Business Directory',
+		// links
+		'more_categories_link' => 'View More Products Categories...',
+		'join_us' => 'Join Us!',
+		'sign_in' => 'Sign In',
+		'view_more' => 'View More',
+		
 		// Emails
 		'confirmation_subject' => 'Invoice Ninja Account Confirmation',
 		'confirmation_header' => 'Account Confirmation',

@@ -21,6 +21,7 @@
 	<link href="{{ asset('css/bootstrap.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
 	<link href="{{ asset('css/font-awesome.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
 	<link href="{{ asset('css/jquery.dataTables.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
+	
 	<!--  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700,900|Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'> -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 	<link href="{{ asset('css/app.css') }}?no_cache={{ AUCTIONZOO_VERSION }}" rel="stylesheet" />
@@ -41,6 +42,7 @@
 	        }
 	    } );
 	</script>	
+	<script type="text/javascript" src="{{ asset('js/app.js') }}?no_cache={{ AUCTIONZOO_VERSION }}"></script>
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -50,6 +52,16 @@
 </head>
 <body>
 @yield('body')
-@yield('footer')
+@section('footer')
+<footer class="row">
+	<div class="col-md-12">
+		<p>Web Design by <a href="">jahidul islam</a>
+		<p>Copyright &copy; 2015. <b>{{ APP_DEV_COMP }}</b> All Rights Reserved. - <b>{{ APP_URL_NAME }}</b></p>
+	</div>
+	<div class="col-md-12">
+		<p>{{ APP_NAME }} is world's largest searchable B2B marketplace and Exporters Directory that connects Manufacturers Exporters Suppliers and Buyers to generate value from unlimited online trade opportunities and Buyer Enquiries. {{APP_URL_NAME}} is the trusted B2B Marketplace where only genuine business enquiries supplement trade deals between buyers, suppliers, exporters and importers of every origin. A number of manufacturers, suppliers, exporters, wholesaler, traders and service providers get maximum exposure to the potential buyers with {{ APP_NAME }}. At {{ APP_NAME }}, a slew of global business entities meet, initiate, share and gain from underlying trade opportunities.</p>
+	</div>
+</footer>            
+@show
 </body>
 </html>

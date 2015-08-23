@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="col-md-5">
 					<ul class="list-inline">
-						<li>{{ trans('texts.top_greetings', ['user_role' => 'User!']) }}</li>
+						<li>{{ trans('texts.user_greetings', ['user_role' => 'User!']) }}</li>
 						<li><a href="{{ url('login') }}"><i class="fa fa-download"></i>&nbsp;{!! trans('texts.login') !!}</a></li>
 						<li><a href="{{ url('register') }}"><i class="fa fa-user"></i>&nbsp;{!! trans('texts.register') !!}</a>
 					</ul>
