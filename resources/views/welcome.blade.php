@@ -3,7 +3,7 @@
 <section class="row content">
 	<article class="col-md-9">
 		<h1 class="hig page-heading">{{ trans('texts.browse_categories_heading') }}</h1>
-		<div class="row">
+		<div class="row pdt10 categories">
 			@each('partials.category', $categories, 'category')
 			<div class="col-md-12">
 				<a href="">{{ trans('texts.more_categories_link') }}</a>
@@ -12,12 +12,16 @@
 	</article>
 	<aside class="col-md-3">
 		<section class="row">
-			<div class="col-md-4">
-				<i class="fa fa-user"></i>
-			</div>
-			<div class="col-md-8">
-				<h3>{{ trans('texts.user_greetings', ['user_role' => 'Guest!']) }}</h3>
-				<p><a href="">{{ trans('texts.join_us') }}</a> <b>{{ trans('texts.free') }}</b> {{ trans('texts.or') }} {{ trans('texts.sign_in') }} </p>
+			<div class="col-md-12 intro-acc">
+				<div class="row">
+					<div class="col-md-3">
+						<i class="fa fa-user"></i>
+					</div>
+					<div class="col-md-9">
+						<h3 class="large b up">{{ trans('texts.user_greetings', ['user_role' => 'Guest!']) }}</h3>
+						<p><a href="">{{ trans('texts.join_us') }}</a> <b>{{ trans('texts.free') }}</b> {{ trans('texts.or') }} {{ trans('texts.sign_in') }} </p>
+					</div>
+				</div>
 			</div>
 			<!-- Nav tabs -->
 		   <ul class="col-md-12 nav nav-tabs" role="tablist">
