@@ -6,8 +6,9 @@ html, body{
 
 a{
 	color: #08c;
+	cursor: pointer;
 }
-a.dac{
+.dac{
 	color: #024;
 	font-weight: 700;
 	text-decoration: none;
@@ -21,6 +22,9 @@ a:hover{
 .yellow{
 	color: #ff0;
 }
+.bgf7f7f7{
+	background-color: #f7f7f7;
+}
 .green{
 	color: #060;
 }
@@ -29,6 +33,9 @@ a:hover{
 }
 .large{
 	font-size: 1.1em;
+}
+.xlarge {
+    font-size: 1.2em;
 }
 .b{
 	font-weight: 700;
@@ -50,6 +57,7 @@ ul{
 	padding-left: 0px;
 	list-style: none;
 }
+
 .bdr{
 	border: 1px solid #ccc;
 }
@@ -58,6 +66,24 @@ ul{
 }
 .pdt10{
 	padding-top:10px;
+}
+.pdt20{
+    padding-top:20px;
+}
+.pdb20{
+    padding-bottom:20px;
+}
+.pdb30{
+    padding-bottom:30px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt30{
+	margin-top: 30px;
+}
+.pdr5{
+	padding-right: 5px;
 }
 .nb{
 	font-weight: normal;
@@ -151,7 +177,15 @@ a.no-u:focus{
 	border: 1px solid #ccc;
 	display: inline-block;
 }
-
+.more-cat{
+	text-align: center;
+}
+.more-cat a{
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	background-color: #08c;
+	color: rgba(255, 255, 255, .9);
+}
 aside{
 	margin-top: 10px;
 }
@@ -183,4 +217,33 @@ aside .row{
 .bsnav-content ul{
 	padding-top: 10px;
 	height: 160px;
+}
+.adv-container .col-md-12{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.ms-pnl .col-md-12:first-child{
+	background: #c30;
+	color: rgba(255,255,255,.8);
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.ms-pnl{
+	padding-bottom: 5px;
+}
+.banner{
+	padding-left: 10px;
+	padding-right: 5px;
+	overflow: hidden;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.banner .fa-arrow-circle-right{
+	color: #c30;
+}
+.banner li{
+	padding: 5px;
+}
+.featured{
+	background-color: #fff;
 }

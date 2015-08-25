@@ -1,2 +1,27 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$primary-color: #08c;
+$anchor-dark-color: #024;
+$anchor-hover-color: #06c; 
+$highlight-color: #ff0; 
+$right-color: #060;
+$imp-color: #c30;
+$primary-border-color: #ccc;
+$large-font: 1.1em;
+$bold-weight: 700;
+$primary-font: Arial,Helvetica,sans-serif;
+$header-font: 'Roboto Condensed', sans-serif;
+$top-padding: 10px;
 
+@mixin beu(){
+    font-weight: 700;
+    text-decoration: none;
+}
+
+html, body{ font: 12px/1.5em $primary-font; }
+a{ color: $primary-color; }
+a:hover{ color: $anchor-hover-color; }
+a.dac{
+    color: $anchor-dark-color;
+    @include beu();
+}
+.hig{ color: $primary-color; }
