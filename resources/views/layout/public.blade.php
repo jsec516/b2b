@@ -7,8 +7,8 @@
 			<div class="col-md-5 pdt10">
 					<ul class="list-inline auth-menu">
 						<li>{{ trans('texts.user_greetings', ['user_role' => 'User!']) }}</li>
-						<li><a href="{{ url('login') }}"><i class="fa fa-download"></i>&nbsp;{!! trans('texts.login') !!}</a></li>
-						<li><a href="{{ url('register') }}"><i class="fa fa-user"></i>&nbsp;{!! trans('texts.register') !!}</a>
+						<li><a class="no-u" href="{{ url('login') }}"><i class="fa fa-download"></i>&nbsp;{!! trans('texts.login') !!}</a></li>
+						<li><a class="no-u" href="{{ url('register') }}"><i class="fa fa-user"></i>&nbsp;{!! trans('texts.register') !!}</a>
 					</ul>
 				</div>
 				<div class="col-md-2 pdt10">

@@ -18,6 +18,15 @@ a:hover{
 .hig{
 	color: #08c;
 }
+.yellow{
+	color: #ff0;
+}
+.green{
+	color: #060;
+}
+.dif{
+	color: #c30;
+}
 .large{
 	font-size: 1.1em;
 }
@@ -40,6 +49,9 @@ h1, h2, h3, h4, h5, h6{
 ul{
 	padding-left: 0px;
 	list-style: none;
+}
+.bdr{
+	border: 1px solid #ccc;
 }
 .bdrb{
     border-bottom: 1px solid #ccc;
@@ -68,8 +80,8 @@ ul{
 	top: 22px;
     border-top-color: #fff;
 }
-.auth-menu a:hover,
-.auth-menu a:focus{
+a.no-u:hover,
+a.no-u:focus{
 	text-decoration:none;
 }
 
@@ -152,7 +164,23 @@ aside .row{
 	border: 1px solid transparent;
 	color: #fff;
 }
+.intro-acc a{
+	color: #fff;
+}
 .intro-acc .fa-user{
 	font-size: 50px;
 	color: #fff;
+}
+.bsnav{
+	padding-right: 0px;
+}
+.bsnav li{
+	width: 50%;
+}
+.nav-tabs.bsnav > li > a[aria-controls="forBuyer"]{
+	border-right-color: transparent;
+}
+.bsnav-content ul{
+	padding-top: 10px;
+	height: 160px;
 }

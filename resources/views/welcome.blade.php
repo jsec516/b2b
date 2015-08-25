@@ -11,39 +11,51 @@
 		</div>
 	</article>
 	<aside class="col-md-3">
-		<section class="row">
-			<div class="col-md-12 intro-acc">
+		<section class="row bdr">
+			<div class="col-md-12 b bdr intro-acc">
 				<div class="row">
 					<div class="col-md-3">
 						<i class="fa fa-user"></i>
 					</div>
 					<div class="col-md-9">
-						<h3 class="large b up">{{ trans('texts.user_greetings', ['user_role' => 'Guest!']) }}</h3>
-						<p><a href="">{{ trans('texts.join_us') }}</a> <b>{{ trans('texts.free') }}</b> {{ trans('texts.or') }} {{ trans('texts.sign_in') }} </p>
+						<h3 class="large  up">{{ trans('texts.user_greetings', ['user_role' => 'Guest!']) }}</h3>
+						<p><a class="no-u" href="{{ url('register') }}">{{ trans('texts.join_us') }}</a> <b class="yellow">{{ trans('texts.free') }}</b> {{ trans('texts.or') }} <a class="no-u" href="{{ url('login') }}">{{ trans('texts.sign_in') }}</a> </p>
 					</div>
 				</div>
 			</div>
 			<!-- Nav tabs -->
-		   <ul class="col-md-12 nav nav-tabs" role="tablist">
+		   <ul class="col-md-12 nav nav-tabs bsnav" role="tablist">
 		     <li role="presentation" class="active"><a href="#forSupplier" aria-controls="forSupplier" role="tab" data-toggle="tab">{{ trans('texts.for_supplier') }}</a></li>
 		     <li role="presentation"><a href="#forBuyer" aria-controls="forBuyer" role="tab" data-toggle="tab">{{ trans('texts.for_buyer') }}</a></li>
 		   </ul>
 			
 		   <!-- Tab panes -->
-		   <div class="tab-content">
-		     <div role="tabpanel" class="tab-pane active" id="home">
+		   <div class="col-md-12 tab-content bsnav-content">
+		     <div role="tabpanel" class="tab-pane active" id="forSupplier">
 		     	<ul>
 		     		<li>
-		     			<a href=""></a>
-		     			<p></p>
+		     			<i class="fa fa-check-circle green"></i>
+		     			<a class="dif" href="">Create your catalog FREE</a>
+		     			<p>Join and Get your Free Catalog with ExportersIndia.com, advertise your products / sell offers and much more!</p>
+		     		</li>
+		     		<li>
+		     			<i class="fa fa-check-circle green"></i>
+		     			<a class="dif" href="">Advertise FREE</a>
+		     			<p>Subscribe to our premium services, Get more Buyers Inquiries from all over the World.</p>
 		     		</li>
 		     	</ul>
 		     </div>
-		     <div role="tabpanel" class="tab-pane" id="profile">
+		     <div role="tabpanel" class="tab-pane" id="forBuyer">
 		    	<ul>
 		     		<li>
-		     			<a href=""></a>
-		     			<p></p>
+		     			<i class="fa fa-check-circle green"></i>
+		     			<a class="dif" href="">Post your Buy Requirement</a>
+		     			<p>Get responses from pre-verified suppliers and manufacturers.</p>
+		     		</li>
+		     		<li>
+		     			<i class="fa fa-check-circle green"></i>
+		     			<a class="dif" href="">Search Products / Suppliers</a>
+		     			<p>Search products and contact directly to the suppliers of your choice.</p>
 		     		</li>
 		     	</ul>
 		     </div>
