@@ -1,6 +1,6 @@
 @extends('layout.public')
 @section('content')
-<div class="container-fluid pdb30">
+<div class="container-fluid pdb20">
 	<div class="container">
 		<section class="row content">
 			<article class="col-md-9">
@@ -95,71 +95,100 @@
 	<div class="container">
 		<section class="row">
 			<div class="col-md-6 featured">
-				<h1 class="page-heading">{{ trans('texts.featured_companies') }}</h1>
-				<ul>
-					<li>
-						<i class="fa fa-angle-double-right" ></i><a href=""></a>
-						<p></p>
-					</li>
-				</ul>
+				<div class="inner">
+					<h1 class="page-heading">{{ trans('texts.featured_companies') }}</h1>
+					<ul>
+						@for($i=0; $i<4; $i++)
+						<li>
+							<i class="fa fa-angle-double-right" ></i>&nbsp;<a href="">Basudev Stones</a>
+							<p>(Sandstone Elephant Statues, Sandstone Apsara Statue 05, Sandstone Buddha Statue)</p>
+						</li>
+						@endfor
+					</ul>
+				</div>
 			</div>
 			<div class="col-md-6 featured">
-				<a class="dac pdt10 pdr5 pull-right">{{ trans('texts.view_more') }} <i class="fa fa-angle-double-right" ></i></a>
-				<h1 class="page-heading">{{ trans('texts.latest_buy_leads') }}</h1>
-				<ul>
-					<li>
-						<i class="fa fa-angle-double-right" ></i><a href=""></a>
-						<p></p>
-					</li>
-				</ul>
+				<div class="inner">
+					<a class="dac pdt10 pdr5 pull-right">{{ trans('texts.view_more') }} <i class="fa fa-angle-double-right" ></i></a>
+					<h1 class="page-heading">{{ trans('texts.latest_buy_leads') }}</h1>
+					<ul class="f16">
+						@for($i=0; $i<4; $i++)
+						<li>
+							<i class="fa fa-angle-double-right" ></i>&nbsp;<a href="">Basudev Stones <b>- dhaka </b><figure class="flag bd"></figure></a>
+							<p>(Sandstone Elephant Statues, Sandstone Apsara Statue 05, Sandstone Buddha Statue)</p>
+						</li>
+						@endfor
+					</ul>
+				</div>
 			</div>
 		</section>
 	</div>
 </div>
-<section class="row">
-	<h1>{{ trans('texts.featured_products') }}</h1>
-	<div class="col-md-12">
-		<div class="row">
-			<div class="col-md-1">
-				<a href=""><i class="fa fa-angle-left"></i></a>
+<div class="container-fluid pdt20 pdb20">
+	<div class="container">
+		<section class="row">
+			<div class="col-md-12 featured products">
+				<h1 class="page-heading">{{ trans('texts.featured_products') }}</h1>
+				<div class="row">
+					<div class="col-md-1 left-nav">
+						<i class="fa fa-angle-left"></i>
+					</div>
+					<ul class="col-md-10 list-inline">
+						@for($i=1;$i<6;$i++)
+						<li>
+							<img src='{{ asset("uploads/product/$i.jpg") }}' />
+							<p><a href="">Stack Emission Monitoring</a></p>
+						</li>
+						@endfor
+					</ul>
+					<div class="col-md-1 right-nav">
+						<i class="fa fa-angle-right"></i>
+					</div>
+				</div>
 			</div>
-			<ul class="col-md-10 list-inline">
-				<li>
-					<img src="" />
-					<p><a href=""></a></p>
-				</li>
-				<li>
-					<img src="" />
-					<p><a href=""></a></p>
-				</li>
-				<li>
-					<img src="" />
-					<p><a href=""></a></p>
-				</li>
-			</ul>
-			<div class="col-md-1">
-				<a href=""><i class="fa fa-angle-right"></i></a>
+		</section>
+	</div>
+</div>
+<div class="container-fluid bgee bdrt">
+	<div class="container">
+		<section class="row pdt10 pdb20 top-footer">
+			<div class="col-md-6">
+				<div class="row bdrd">
+					<mark class="col-md-12 b hig large"> {{ trans('texts.general_links_header') }}</mark>
+					<ul class="col-md-6">
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Home</a></li>
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">About Us</a></li>
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Advertise with Us</a></li>
+					</ul>
+					<ul class="col-md-6">
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Contact Us</a></li>
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Feedback</a></li>
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Terms of Use</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
+			<div class="col-md-3">
+				<div class="row bdrd">
+					<mark class="col-md-12 b hig large"> {{ trans('texts.trade_links_header') }}</mark>
+					<ul class="col-md-12">
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Buy Offers</a></li>
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Post Buy Requirement</a></li>
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Post Products - FREE</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<mark class="col-md-12 b hig large"> {{ trans('texts.business_links_header') }}</mark>
+					<ul class="col-md-12">
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Manufacturers</a></li>
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Exporters</a></li>
+						<li><i class="fa fa-angle-right"></i>&nbsp;<a href="">Service Providers</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
 	</div>
-</section>
-<section class="row">
-	<div class="col-md-6">
-		<div class="row">
-			<mark> {{ trans('texts.general_links_header') }}</mark>
-			<ul class="col-md-12">
-			
-			</ul>
-		</div>
-	</div>
-	<div class="col-md-6">
-		<div class="row">
-			<mark> {{ trans('texts.business_links_header') }}</mark>
-			<ul class="col-md-12">
-			
-			</ul>
-		</div>
-	</div>
-</section>
+</div>
 @stop
 

@@ -85,9 +85,4 @@
 	</div>
 </div>
 @yield('content')
-<div class="container-fluid">	
-	<footer class="row footer">
-	
-	</footer>
-</div>
 @stop

@@ -25,6 +25,15 @@ a:hover{
 .bgf7f7f7{
 	background-color: #f7f7f7;
 }
+.bgee{
+	background: #eee;
+}
+.dw{
+	color: rgba(255, 255, 255, 0.8);
+}
+a.dw:hover{
+	color: rgba(255, 255, 255, 0.8);
+}
 .green{
 	color: #060;
 }
@@ -61,8 +70,14 @@ ul{
 .bdr{
 	border: 1px solid #ccc;
 }
+.bdrd{
+	border-right: 1px dashed #ccc;
+}
 .bdrb{
     border-bottom: 1px solid #ccc;
+}
+.bdrt{
+	border-top: 1px solid #ccc;
 }
 .pdt10{
 	padding-top:10px;
@@ -244,6 +259,45 @@ aside .row{
 .banner li{
 	padding: 5px;
 }
-.featured{
+.featured .inner{
 	background-color: #fff;
+	padding: 10px;
+}
+.featured li p{
+	padding-left: 10px;
+	color: #666;
+}
+.featured.products .col-md-1{
+	width: 5%;
+}
+.featured.products .col-md-10{
+    width: 90%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.featured.products img{
+	border: 1px solid #ccc;
+    padding: 4px;
+}
+.left-nav,.right-nav{
+	padding-top: 90px;
+}
+.featured.products .fa-angle-left,
+.featured.products .fa-angle-right{
+	font-size: 2em;
+    background-color: #eee;
+    padding: 15px 7px;
+    cursor: pointer;
+}
+
+.top-footer mark{
+	background: none;
+	margin-bottom: 10px;
+}
+.top-footer a{
+	color: #333;
+}
+.footer-container{
+	background: #08c;
+	color: rgba(255, 255, 255, 0.8);
 }

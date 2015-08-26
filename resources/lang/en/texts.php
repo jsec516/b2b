@@ -46,6 +46,7 @@ return array (
 		'general_links_header' => 'General Links',
 		'trade_links_header' => 'Trade Tool Kit',
 		'service_links_header' => 'Services Directory',
+		'trade_links_header' => 'Trade Tool Kit',
 		'business_links_header' => 'Business Directory',
 		// links
 		'more_categories_link' => 'View More Products Categories...',
