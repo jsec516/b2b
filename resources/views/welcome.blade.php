@@ -137,7 +137,7 @@
 						@for($i=1;$i<6;$i++)
 						<li>
 							<img src='{{ asset("uploads/product/$i.jpg") }}' />
-							<p><a href="">Stack Emission Monitoring</a></p>
+							<p class="text-center"><a href="">Stack Emission Monitoring</a></p>
 						</li>
 						@endfor
 					</ul>
