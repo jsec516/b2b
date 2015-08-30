@@ -97,6 +97,9 @@ ul{
 .mt30{
 	margin-top: 30px;
 }
+.mb20{
+	margin-bottom: 20px;
+}
 .pdr5{
 	padding-right: 5px;
 }
@@ -300,4 +303,49 @@ aside .row{
 .footer-container{
 	background: #08c;
 	color: rgba(255, 255, 255, 0.8);
+}
+
+.btn.quick-btn{
+	background-color: #f2f9ff;
+    color: #08c;
+    font-size: 12px;
+    padding: 3px 10px;
+}
+
+.siginin-info{
+	min-height: 450px;
+}
+.siginin-info .page-heading{
+	border-bottom: transparent;
+}
+
+.siginin-info ul{
+	padding-left: 30px;
+}
+
+.siginin-info ul>li{
+	margin-bottom: 10px;
+}
+
+.signin-form {
+	background-color: #fff;
+    padding: 20px 15px;
+    position: relative;
+}
+
+.signin-form form{
+	border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+}
+
+.signin-form .phelp{
+	display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 140px;
+}
+
+.signin-form .join-free-btn{
+	display: block;
+    padding: 15px;
 }

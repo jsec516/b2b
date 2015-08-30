@@ -109,3 +109,4 @@ define ( 'SITE_URL', Config::get ( 'app.url' ) );
 define ( 'AUCTIONZOO_VERSION', '1.0.0' );
 define ( 'CONTACT_EMAIL', 'auctionzoo@gmail.com' );
 define ( 'APP_WEB_URL', 'http://localhost:8000' );
+define ('DIAL_NUMBER', '+91-11-45679604');

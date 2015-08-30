@@ -1,5 +1,6 @@
 <?php
 use App\Libraries\Utils;
+use App\Providers\ComposerServiceProvider;
 return [
 
     /*
@@ -150,6 +151,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+    	ComposerServiceProvider::class,
 
     ],
 

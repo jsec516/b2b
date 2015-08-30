@@ -12,7 +12,7 @@
 					</ul>
 				</div>
 				<div class="col-md-2 pdt10">
-					<label class="hig nb">{{ trans('texts.call_us') }}</label> : +91-11-45679604
+					<label class="hig nb">{{ trans('texts.call_us') }}</label> : {{ DIAL_NUMBER }}
 				</div>
 				<div class="col-md-5">
 					<ul class="nav nav-pills pull-right">

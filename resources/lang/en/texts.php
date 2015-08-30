@@ -5,6 +5,16 @@ return array (
 		'email_field' => 'Email',
 		'password_field' => 'Password',
 		'remember_me_field' => 'Remember Me',
+		'c_password_label' => 'Re-enter Password',
+		'password_label' => 'Create Password',
+		'email_label' => 'Login E-mail',
+		'name_label' => 'Name',
+		'country_label' => 'Country',
+		'mobile_label' => 'Mobile No',
+		'phone_label' => 'Phone No.',
+		'company_name_label' => 'Company Name',
+		'address_label' => 'Company Address',
+		'website_label' => 'Website',
 		// home page
 		'user_greetings' => 'Welcome :user_role',
 		// authentication and registration
@@ -48,11 +58,18 @@ return array (
 		'service_links_header' => 'Services Directory',
 		'trade_links_header' => 'Trade Tool Kit',
 		'business_links_header' => 'Business Directory',
+		'not_member_q' => 'Not a Member?',
+		'already_member_q' => 'Already a Member?',
+		'login_info_heading' => 'Login Information',
+		'contact_info_heading' => 'Contact Information',
+		'business_info_heading' => 'Business Location & Profile',
+		'signin_heading' => 'Online International Trade Management Tool.',
 		// links
 		'more_categories_link' => 'View More Products Categories...',
 		'join_us' => 'Join Us!',
 		'sign_in' => 'Sign In',
 		'view_more' => 'View More',
+		'reg_now' => 'Register Now',
 		
 		// Emails
 		'confirmation_subject' => 'Invoice Ninja Account Confirmation',
