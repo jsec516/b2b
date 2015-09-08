@@ -26,8 +26,7 @@ class CreateUsersTable extends Migration
     	Schema::dropIfExists('accounts');
     	Schema::dropIfExists('users');
     	Schema::dropIfExists('password_resets');
-    	Schema::dropIfExists('post_types');
-    	Schema::dropIfExists('posts');
+    	
     	
     	Schema::create('countries', function($table)
     	{
@@ -178,36 +177,7 @@ class CreateUsersTable extends Migration
         	$t->string('token')->index();
         });
         
-        Schema::create('post_types', function($t)
-        {
-        	$t->increments('id');
-        	$t->timestamps();
-        	$t->softDeletes();
         
-        	$t->string('name');
-        });
-        
-        Schema::create('posts', function($t)
-        {
-        	$t->increments('id');
-        	$t->unsignedInteger('post_type_id')->index();
-        	$t->unsignedInteger('account_id')->index();
-        	$t->unsignedInteger('user_id');
-        	$t->timestamps();
-        	$t->softDeletes();
-        
-        	$t->string('title');
-        	$t->text('notes');
-        	$t->decimal('cost', 13, 2);
-        	$t->decimal('qty', 13, 2)->nullable();
-        
-        	$t->foreign('post_type_id')->references('id')->on('post_types')->onDelete('cascade');
-        	$t->foreign('account_id')->references('id')->on('accounts')->onDelete('cascade');
-        	$t->foreign('user_id')->references('id')->on('users')->onDelete('cascade');;
-        
-        	$t->unsignedInteger('public_id');
-        	$t->unique( array('account_id','public_id') );
-        });
     }
 
     /**
@@ -217,6 +187,19 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
+        Schema::dropIfExists('countries');
+    	Schema::dropIfExists('timezones');
+    	Schema::dropIfExists('date_formats');
+    	Schema::dropIfExists('datetime_formats');
+    	Schema::dropIfExists('currencies');
+    	Schema::dropIfExists('users');
+    	Schema::dropIfExists('payment_types');
+    	Schema::dropIfExists('payment_terms');
+    	Schema::dropIfExists('sizes');
+    	Schema::dropIfExists('industries');
+    	Schema::dropIfExists('themes');
+    	Schema::dropIfExists('accounts');
+    	Schema::dropIfExists('users');
+    	Schema::dropIfExists('password_resets');
     }
 }
