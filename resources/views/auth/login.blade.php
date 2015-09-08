@@ -24,7 +24,7 @@
 						{!! Former::checkbox('remember')->label(false)->text(trans('texts.remember_me_field')) !!}
 						{!! Former::actions()->large_primary_submit( trans('texts.sign_in') ) !!}
 					{!! Former::close() !!}
-					<a class="hig b phelp" href="">Password help?</a>
+					<a class="hig b phelp" href="{{ url('password/email') }}">Password help?</a>
 					<p class="pdt10 large b">{{ trans('texts.not_member_q') }}</p>
 					<a class="btn btn-large btn-primary join-free-btn" href="{{ url('register') }}">{{ trans('texts.register') }}</a>
 				</div>

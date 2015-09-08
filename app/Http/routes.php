@@ -33,22 +33,20 @@ Route::get ( '/logout', array (
 		'as' => 'logout',
 		'uses' => 'Auth\AuthController@getLogoutWrapper' 
 ) );
-Route::get ( '/forgot', array (
-		'as' => 'forgot',
+Route::get ( '/password/email', array (
+		'as' => 'password_email_req',
 		'uses' => 'Auth\PasswordController@getEmail' 
 ) );
-Route::post ( '/forgot', array (
-		'as' => 'forgot',
+Route::post ( '/password/email', array (
+		'as' => 'password_email_req',
 		'uses' => 'Auth\PasswordController@postEmail' 
 ) );
 Route::get ( '/password/reset/{token}', array (
-		'as' => 'forgot',
-		'uses' => 'Auth\PasswordController@getReset' 
+		'uses' => 'Auth\PasswordController@getReset'
 ) );
 Route::post ( '/password/reset', array (
-		'as' => 'forgot',
-		'uses' => 'Auth\PasswordController@postReset' 
-) );
+		'uses' => 'Auth\PasswordController@postReset'
+));
 Route::get ( '/user/confirm/{code}', 'UserController@confirm' );
 
 // profile completion routes
