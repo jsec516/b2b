@@ -32,6 +32,13 @@ return array (
 				'term_placeholder' => 'Enter keyword to search',
 				'btn_text' => 'Search' 
 		],
+		'buy_lead' => [
+			'heading' => 'Post Your Requirement Free!',
+			'sub_heading' => 'Just complete this simple form, Get Instant quotes from Verified Suppliers',
+			'form_heading' => 'Tell to Suppliers What You Want',
+				'title_label' => 'Product / Services',
+					
+		],
 		//    menu
 		'nav' => [ 
 				'home' => 'Home',
