@@ -10,6 +10,7 @@ return array (
 		'email_label' => 'Login E-mail',
 		'name_label' => 'Name',
 		'country_label' => 'Country',
+		'city_label' => 'City Name',
 		'mobile_label' => 'Mobile No',
 		'phone_label' => 'Phone No.',
 		'company_name_label' => 'Company Name',
@@ -36,8 +37,21 @@ return array (
 			'heading' => 'Post Your Requirement Free!',
 			'sub_heading' => 'Just complete this simple form, Get Instant quotes from Verified Suppliers',
 			'form_heading' => 'Tell to Suppliers What You Want',
-				'title_label' => 'Product / Services',
-					
+			'title_label' => 'Product / Services',
+				'title_label_ph' => 'Products / Services you are looking for',
+				'description_label' => 'Describe Your Requirements',
+				'description_label_ph' => 'Describe Your Buying Requirements in detail',
+				'email_label' => 'E-mail Id',
+				'contact_label' => 'Contact Name',
+				'adv' => [
+					'heading' => 'Buyers Advantages?',
+						'imd_resp_h' => 'Immediate Responses',
+						'imd_resp_d' => 'Get Instant Feedback from Suppliers.',
+						'gs_h' => 'Genuine Suppliers',
+						'gs_d' => 'Accredited Suppliers that Meet Your Needs.',
+						'mc_h' => 'Multiple Choices',
+						'mc_d' => 'Get the power to choose the best!'
+				]
 		],
 		//    menu
 		'nav' => [ 
