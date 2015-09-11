@@ -55,7 +55,7 @@
 						{!! Former::close() !!}
 					</div>
 					<div class="col-md-2 post-buy-lead">
-						<a href="" class="btn-large btn-primary btn">{!! trans('texts.buy_lead_btn') !!}</a>
+						<a href="{{ url('buy-lead/new') }}" class="btn-large btn-primary btn">{!! trans('texts.buy_lead_btn') !!}</a>
 					</div>
 				</div>
 				<div class="row pdt10">
