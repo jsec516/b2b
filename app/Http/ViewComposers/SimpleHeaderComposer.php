@@ -29,10 +29,10 @@ class SimpleHeaderComposer
     public function compose(View $view)
     {
     	//Log::info($this->request->path());
-    	$target_auth_url = 'login';
+    	$target_auth_url = url('login');
     	$target_auth_label = trans('texts.login'); 
     	if(strtolower($this->request->path())==='login'){
-			$target_auth_url = 'register';
+			$target_auth_url = url('register');
 			$target_auth_label = trans('texts.register');    			
     	}
     	$view->with('target_auth_url', $target_auth_url);

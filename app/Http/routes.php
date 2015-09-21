@@ -68,7 +68,7 @@ Route::get ( '/industry', array (
 ) );
 Route::get ( '/buyers', array (
 		'as' => 'buyers',
-		'uses' => 'BuyLeadController@showIndex'
+		'uses' => 'BuyController@showIndex'
 ) );
 // items related routes
 Route::get ( '/product', array (
@@ -77,8 +77,8 @@ Route::get ( '/product', array (
 ) );
 Route::get ( '/product/new', 'ProductController@getNew' );
 Route::post ( '/product/new', 'ProductController@postNew' );
-Route::get ( '/buy-lead/new', 'BuyLeadController@getNew' );
-Route::post ( '/buy-lead/new', 'BuyLeadController@postNew' );
+Route::get ( '/buy-lead/new', 'BuyController@getNew' );
+Route::post ( '/buy-lead/new', 'BuyController@postNew' );
 
 // admin routes
 Route::group ( [ 
