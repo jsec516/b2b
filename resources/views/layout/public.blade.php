@@ -16,8 +16,8 @@
 				</div>
 				<div class="col-md-5">
 					<ul class="nav nav-pills pull-right">
-						<li><a href="">{{ trans('texts.buy_menu_text') }} <i class="fa fa-caret-down"></i></a></li>
-						<li><a href="">{{ trans('texts.sell_menu_text') }} <i class="fa fa-caret-down"></i></a></li>
+						<li><a href="{{ route('buyers') }}">{{ trans('texts.buy_menu_text') }} <i class="fa fa-caret-down"></i></a></li>
+						<li><a href="{{ route('industries') }}">{{ trans('texts.sell_menu_text') }} <i class="fa fa-caret-down"></i></a></li>
 						<li><a href="">{{ trans('texts.advertise_menu_text') }} </a></li>
 						<li><a href="">{{ trans('texts.help_menu_text') }} </a></li>
 					</ul>
@@ -70,7 +70,7 @@
 				                'title' => trans('texts.nav.pr_or_ser')
 				            ],
 				            [
-				                'link' => route('companies'),
+				                'link' => route('industries'),
 				                'title' => trans('texts.nav.companies')
 				            ],
 				            [

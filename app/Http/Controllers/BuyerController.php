@@ -3,10 +3,14 @@
 namespace App\Http\Controllers;
 
 
-class BuyController extends Controller
+class BuyerController extends Controller
 {
 	public function getNew()
 	{
 		return view('buy.new');
 	}	
+
+	public function getIndex(){
+		return view('buy.index');
+	}
 }

@@ -3,6 +3,11 @@ html, body{
 	font: 12px/1.5em Arial,Helvetica,sans-serif;
 }
 
+.cclear > *:after{
+  	content: "";
+ 	display: table;
+  	clear: both;
+}
 
 a{
 	color: #08c;
@@ -13,20 +18,45 @@ a{
 	font-weight: 700;
 	text-decoration: none;
 }
+.dul{
+	color: #999;
+}
 a:hover{
 	color: #06c;
 }
 .hig{
 	color: #08c;
+	
+}
+.tsd{
+	text-shadow: 1px 1px rgba(255,255,255,.75);
 }
 .yellow{
 	color: #ff0;
 }
+.bgsilver{
+	color: #ccc;
+}
 .bgf7f7f7{
 	background-color: #f7f7f7;
 }
+.bgfff{
+	background-color: #fff;
+}
+.bgdark2, .bgdark2.no-hover:hover{
+	background-color: #c30;
+}
+.bgdark2.no-hover:hover{
+	border: 1px solid #ccc;
+}
 .bgee{
 	background: #eee;
+}
+.white, .white a, a.white {
+    color: #fff;
+}
+.cyan, .silver, .yellow, .smoke, .white {
+    text-shadow: 1px 1px rgba(0,0,0,.5);
 }
 .dw{
 	color: rgba(255, 255, 255, 0.8);
@@ -34,6 +64,7 @@ a:hover{
 a.dw:hover{
 	color: rgba(255, 255, 255, 0.8);
 }
+
 .green{
 	color: #060;
 }
@@ -45,6 +76,12 @@ a.dw:hover{
 }
 .xlarge {
     font-size: 1.2em;
+}
+.xxlarge{
+	font-size: 1.3em;
+}
+.fa.xxxlarge{
+	font-size: 2.9em;
 }
 .b{
 	font-weight: 700;
@@ -60,6 +97,13 @@ h1, h2, h3, h4, h5, h6{
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-weight: normal;
+}
+
+h1{
+	font-size: 1.5em;
+}
+h2{
+	font-size: 1.1em;
 }
 
 ul{
@@ -79,10 +123,21 @@ ul{
 .bdrt{
 	border-top: 1px solid #ccc;
 }
+.br5{
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.pd10{
+	padding: 10px;
+}
+.pd20{
+	padding: 20px;
+}
 .pdt10{
 	padding-top:10px;
 }
-.pdt20{
+.pdt20, .ac-pdt20 > *{
     padding-top:20px;
 }
 .pdb20{
@@ -91,8 +146,17 @@ ul{
 .pdb30{
     padding-bottom:30px;
 }
+.pdb7{
+	padding-bottom: 7px;
+}
 .mt10{
 	margin-top: 10px;
+}
+.mt20, .ac-mt20 > *{
+	margin-top: 20px;
+}
+.fc-mt0 > *:first-child{
+	margin-top: 0px;
 }
 .mt30{
 	margin-top: 30px;
@@ -100,14 +164,29 @@ ul{
 .mb20{
 	margin-bottom: 20px;
 }
+.mb5{
+	margin-bottom: 5px;
+}
 .pdr5{
 	padding-right: 5px;
+}
+.b{
+	font-weight: bold;
 }
 .nb{
 	font-weight: normal;
 }
 .pr{
 	position: relative;
+}
+.ac-bdrt > *{
+	border-top: 1px solid #ccc;
+}
+.bdrt.dashed, .ac-bdrt.dashed > *{
+	border-top-style: dashed;
+}
+.fc-btw0 > *:first-child{
+	border-top-width: 0 !important;
 }
 .pr.bda:before,.pr.bda:after{
 	border: 6px solid transparent;
@@ -348,4 +427,17 @@ aside .row{
 .signin-form .join-free-btn{
 	display: block;
     padding: 15px;
+}
+
+/* new buy lead page */
+.adv li{
+	/*clear: both;*/
+}
+.adv .fa{
+	margin-right: 25px;
+}
+.adv .desc{
+	display: inline-block;
+    width: 180px;
+    float: right;
 }

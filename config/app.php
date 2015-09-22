@@ -205,9 +205,9 @@ return [
     	/*'Accordion' => 'Bootstrapper\Facades\Accordion',
     	'Alert' => 'Bootstrapper\Facades\Alert',
     	'Badge' => 'Bootstrapper\Facades\Badge',
-    	'Breadcrumb' => 'Bootstrapper\Facades\Breadcrumb',
+    	'Breadcrumb' => 'Bootstrapper\Facades\Breadcrumb',*/
     	'Button' => 'Bootstrapper\Facades\Button',
-    	'ButtonGroup' => 'Bootstrapper\Facades\ButtonGroup',
+    	/*'ButtonGroup' => 'Bootstrapper\Facades\ButtonGroup',
     	'Carousel' => 'Bootstrapper\Facades\Carousel',
     	'ControlGroup' => 'Bootstrapper\Facades\ControlGroup',
     	'DropdownButton' => 'Bootstrapper\Facades\DropdownButton',*/

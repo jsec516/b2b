@@ -91,7 +91,15 @@ return array (
 		'sign_in' => 'Sign In',
 		'view_more' => 'View More',
 		'reg_now' => 'Register Now',
-		
+		// buyers page
+		'buyers' => [
+			'heading' => 'Buy Offers',
+			'heading_desc' => 'Looking for good buy offers? Finding it tough to generate good quality leads for your business? Just get registered with ExportersIndia, & get access to 100s of qualified leads for your business for Free!',
+			'industry_heading' => 'Browse Buy Offers By Industry',
+			'bo_heading' => 'Lastest Buy Offers',
+			'location' => 'Location'
+
+		],
 		// Emails
 		'confirmation_subject' => 'Invoice Ninja Account Confirmation',
 		'confirmation_header' => 'Account Confirmation',

@@ -62,23 +62,28 @@ Route::group ( [
 	Route::get ( '/profile-complete/preview', 'ProfileController@getPreview' );
 } );
 // public routes
-Route::get ( '/industry', array (
-		'as' => 'companies',
-		'uses' => 'CompanyController@showIndex' 
-) );
+
 Route::get ( '/buyers', array (
 		'as' => 'buyers',
-		'uses' => 'BuyController@showIndex'
+		'uses' => 'BuyerController@getIndex'
 ) );
-// items related routes
-Route::get ( '/product', array (
+
+Route::get ( '/products', array (
 		'as' => 'products',
-		'uses' => 'ProductController@showIndex' 
+		'uses' => 'IndustryController@showProductIndex' 
 ) );
-Route::get ( '/product/new', 'ProductController@getNew' );
-Route::post ( '/product/new', 'ProductController@postNew' );
-Route::get ( '/buy-lead/new', 'BuyController@getNew' );
-Route::post ( '/buy-lead/new', 'BuyController@postNew' );
+
+Route::get ( '/indsutries', array (
+		'as' => 'industries',
+		'uses' => 'IndustryController@showIndex' 
+) );
+
+// items related routes
+
+Route::get ( '/product/new', 'IndustryController@getNewProduct' );
+Route::post ( '/product/new', 'IndustryController@postNewProduct' );
+Route::get ( '/buy-lead/new', 'BuyerController@getNew' );
+Route::post ( '/buy-lead/new', 'BuyerController@postNew' );
 
 // admin routes
 Route::group ( [ 
